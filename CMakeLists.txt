@@ -113,6 +113,7 @@ include_directories(${APR_INCLUDE_DIR})
 include_directories(${APR_UTIL_INCLUDE_DIR})
 include_directories(${MINIXML_INCLUDE_DIR})
 include_directories(${CURL_INCLUDE_DIR})
+link_libraries("-L/usr/local/lib -L/usr/lib -lmxml -lcurl -lapr-1 -laprutil-1")
 
 aux_source_directory(oss_c_sdk SRC_LIST)
 
